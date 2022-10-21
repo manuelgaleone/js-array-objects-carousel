@@ -1,0 +1,66 @@
+/*General*/
+main {
+    height: 100vh;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.align_items {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex_end {
+    align-self: flex-end;
+}
+
+/*Main*/
+.imgCarousel {
+    height: 600px;
+    width: 1400px;
+    object-fit: cover;
+}
+
+.arrow {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.arrow:hover {
+    background-color: lightgray;
+    cursor:pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.slides img:not(img.active) {
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+}
+
+.controls {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.next {
+    margin-bottom: 120px;
+}
