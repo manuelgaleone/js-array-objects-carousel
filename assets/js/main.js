@@ -67,7 +67,7 @@ let nextEl = document.querySelector(".next");
 //Inserisco le Immagini
 for (i = 0; i < slides.length; i++) {
 
-    let slidesCol = slides.image;
+    let slidesCol = slides[i].image;
     let imgEl = `<img class="imgCarousel ${i === imgActive ? 'active' : ''} " src=${slidesCol} alt="Carousel">`;
 
     slidesEl.insertAdjacentHTML("beforeend", imgEl);
